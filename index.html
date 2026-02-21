@@ -2,20 +2,41 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>frog</title>
+  <title>EKA karte</title>
   <style>
     body {
       margin: 0;
       background: black;
     }
-    img {
+
+    .container {
+      position: relative;
       width: 100%;
-      height: auto;   /* This makes the page scroll if the image is tall */
+    }
+
+    .container img {
+      width: 100%;
+      height: auto;
       display: block;
+    }
+
+    .link-area {
+      position: absolute;
+      bottom: 7.5%;        /* 260px from bottom ≈ 7.5% of 3436px */
+      left: 33.8%;         /* 380px from left ≈ 33.8% of 1125px */
+      width: 56.4%;        /* width between 380px and 1015px */
+      height: 3%;          /* adjust if needed */
     }
   </style>
 </head>
 <body>
-  <img src="frog.jpg" alt="Scrollable image">
+
+  <div class="container">
+    <img src="EKABUBU.png" alt="EKA Karte">
+    <a class="link-area"
+       href="https://www.augstskola.lv/index.php?parent=887&lng=lva"
+       target="_blank"></a>
+  </div>
+
 </body>
 </html>
